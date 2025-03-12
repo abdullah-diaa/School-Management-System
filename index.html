@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="student">Select Student:</label>
+        <select id="student" name="student">
+            <option value="1">John Doe</option>
+            <option value="2">Jane Smith</option>
+            <!-- Add more students as needed -->
+        </select>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="1">Mathematics</option>
+            <option value="2">Science</option>
+            <!-- Add more courses as needed -->
+        </select>
+
+        <label for="academicClass">Select Academic Class:</label>
+        <select id="academicClass" name="academicClass">
+            <option value="1">Class A</option>
+            <option value="2">Class B</option>
+            <!-- Add more classes as needed -->
+        </select>
+
+        <label for="academicYear">Select Academic Year:</label>
+        <select id="academicYear" name="academicYear">
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <!-- Add more academic years as needed -->
+        </select>
+
+        <button type="submit">Enroll</button>
+    </form>
+</body>
+
+</html>

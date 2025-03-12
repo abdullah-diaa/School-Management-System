@@ -1,0 +1,142 @@
+/* Custom styles for the Add Grades form */
+
+/* Container */
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Card */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header */
+.card-header {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Form Inputs */
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+/* Table Headers */
+.table th {
+    font-weight: bold;
+    color: #4CAF50; /* Green */
+    background-color: #f2f2f2;
+}
+
+/* Table Data */
+.table td {
+    vertical-align: middle;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #007bff;
+}
+
+/* Error Messages */
+.alert-danger {
+    color: #721c24; /* Dark Red */
+    background-color: #f8d7da; /* Light Red */
+    border-color: #f5c6cb; /* Red Border */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+/* Error Message List */
+.alert-danger ul {
+    margin-bottom: 0;
+}
+
+/* Error Message List Items */
+.alert-danger li {
+    margin-bottom: 5px;
+}
+select[name="grades[{{ $index }}][period]"] {
+    font-size: 16px; /* Set font size for the select dropdown */
+    width: 100%; /* Set width to 100% to ensure it takes up full width */
+    padding: 10px; /* Add padding for better spacing */
+}
+#notification-container {
+    
+    width:40%;
+    position: fixed;
+    top: 90%;
+    right: 30%;
+    z-index: 9999;
+}
+
+.notification {
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-25%);
+}
+
+.notification i {
+    margin-right: 10px;
+}
+
+
+.notification.success {
+    background-color: #29a745;
+    border-color: #218838;
+}
+
+.notification.error {
+    background-color: #dc3545;
+    border-color: #c82333;
+}
+@media (max-width: 768px) {
+#notification-container{
+       width:60%;
+        top: 90%;
+    right: 20%;
+    }
+}
+@media (min-width: 768px) {
+#notification-container{
+       font-size: 30px;
+    }
+    
+    }
+   

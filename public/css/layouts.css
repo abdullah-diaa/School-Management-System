@@ -1,0 +1,306 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333; /* Darker color for a modern look */
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar.closed {
+    left: -250px;
+}
+
+.sidebar-content-container {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+.default-profile-picture {
+    font-size: 60px; /* Adjust the font size as needed */
+    width: 100px; /* Adjust the width and height to match the desired size */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ccc; /* Light gray background color */
+    color: #fff; /* White icon color */
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h3, .profile p {
+    margin: 0;
+    color: #ddd; /* Lighter text color for better readability */
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.menu-item a:hover {
+    background-color:#007bff; /* Hover effect with a vibrant color */
+    color: white; /* White text color on hover for better readability */
+}
+
+.menu-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 5px;
+    border-radius: 15%;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    
+    background-color: gray; /* Sidebar toggle matches hover effect */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.sidebar-toggle:hover {
+   background-color: #333; /* Darker shade for toggle hover */
+}
+.menu-item.active a {
+    background-color: gray; /* Darker green for active items */
+    color: white;
+}
+
+@media (min-width: 769px) {
+    .sidebar-toggle {
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+    }
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Same width as the sidebar */
+    height: 60px; /* Adjust as needed */
+    background-color: #e9ecef;   /* Slightly darker background color */
+    color: #333; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align content from right */
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar-content {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    font-size: 18px;
+}
+
+.navbar-brand-link {
+    color: #333; /* Text color */
+    text-decoration: none;
+}
+
+
+main{
+margin-top:80px !important;
+
+}
+@media (min-width: 768px) {
+    main{
+margin-top:100px !important;
+
+}
+.navbar{
+  height:80px;
+  
+}
+}
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex-grow: 0.9 !important; /* Allow the main content to grow to fill the remaining space */
+}
+
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 30px 0; /* Padding for content */
+    width: 100%;
+    position: relative; /* Position relative to its container */
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+
+
+@media (max-height: 100vh) {
+    body {
+        position: relative; /* Ensure body stays in normal flow */
+    }
+
+    .footer {
+        position: absolute; /* Position absolutely to the bottom */
+        top: 100%; /* Position the footer at the bottom */
+        margin-top: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo-link {
+    color: #fff; /* Logo text color */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-links {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu a {
+    color: #fff; /* Menu link text color */
+    text-decoration: none;
+}
+
+.footer-social {
+    flex: 1;
+    text-align: right;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #fff; /* Social icon color */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-links {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .footer-social {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    
+    .footer {
+        margin-top: 40px; /* Increase margin for smaller screens */
+    }
+
+}

@@ -1,0 +1,39 @@
+/* public/css/guardians/show.css */
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.col-md-4 {
+    font-weight: bold;
+}
+
+.col-md-8 {
+    font-style: italic;
+}

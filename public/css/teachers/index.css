@@ -1,0 +1,163 @@
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-header {
+    background-color: #333; /* Green */
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+}
+
+.table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-primary {
+background-color: #333;
+    color: white;
+}
+
+.btn-info {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Gray */
+    color: white;
+}
+
+.btn-danger {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: gray;
+    color: #fff; /* White */
+    border-radius: 5px;
+}
+
+.pagination li a:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+.pagination .prev,
+.pagination .next {
+    background-color: #f0f0f0; /* Light Gray */
+    color: #333; /* Dark Gray */
+}
+
+.pagination .active a {
+    background-color: #333;
+}
+
+.pagination .disabled a {
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: default;
+}
+
+/* Notification Styles */
+#notification-container {
+    
+    width:40%;
+    position: fixed;
+    top: 90%;
+    right: 30%;
+    z-index: 9999;
+}
+
+.notification {
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-25%);
+}
+
+.notification i {
+    margin-right: 10px;
+}
+
+
+.notification.success {
+    background-color: #29a745;
+    border-color: #218838;
+}
+
+.notification.error {
+    background-color: #dc3545;
+    border-color: #c82333;
+}
+@media (max-width: 768px) {
+#notification-container{
+       width:60%;
+        top: 90%;
+    right: 20%;
+    }
+}
+@media (min-width: 769px) {
+#notification-container{
+       font-size: 30px;
+    }
+   
+}

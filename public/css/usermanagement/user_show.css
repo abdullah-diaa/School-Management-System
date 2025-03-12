@@ -1,0 +1,65 @@
+/* Enhanced CSS for Show Blade - Elegant Design with White Background */
+body.show-blade {
+    background-color: #f0f0f0; /* Light gray background color */
+    color: #333; /* Dark gray text color */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.container-lg {
+    max-width: 800px; /* Adjusted container width for big screens */
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.card-header.bg-dark.text-white {
+    background-color: #333; /* Dark gray background color for card header */
+    border-bottom: 2px solid #222; /* Darker border for card header */
+}
+
+.card-header.bg-dark.text-white h2 {
+    color: #fff; /* White text color for card header */
+    font-weight: bold; /* Bold font weight for heading */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Increased letter spacing for dramatic effect */
+    margin-top: 0; /* Remove default margin */
+    padding: 20px 0; /* Adjusted padding for heading */
+}
+
+.card-body {
+    background-color: #fff; /* White background color for card body */
+    border-radius: 20px; /* Rounded corners for card body */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow effect for card */
+}
+
+.card {
+    border: none; /* Remove border from card */
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0.05); /* Very light gray background for list group items */
+    border: none; /* Remove border from list group items */
+    color: #333; /* Dark gray text color for list group items */
+    font-size: 20px; /* Increased font size for list group items */
+}
+
+.list-group-item strong {
+    color: #000; /* Black color for highlighted text */
+    font-weight: bold; /* Bold font weight for highlighted text */
+}
+
+.btn-primary,
+.btn-danger {
+    background-color: #007bff; /* Blue color for buttons */
+    border: none; /* Remove border from buttons */
+    font-weight: bold; /* Bold font weight for buttons */
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.5); /* Subtle shadow effect for buttons */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    background-color: #0056b3; /* Darker blue color for buttons on hover */
+    box-shadow: 0px 0px 30px rgba(0, 123, 255, 0.8); /* Stronger shadow effect for buttons on hover */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}

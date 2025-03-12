@@ -1,0 +1,51 @@
+/* Academic Class Show Page CSS */
+
+/* Main Container */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light Gray */
+}
+
+/* Card */
+.card {
+    background-color: #ffffff; /* White */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: green; /* Green */
+    color: #ffffff; /* White */
+    padding: 15px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    color: #333333; /* Dark Gray */
+}
+
+.card-body h4 {
+    color: #007bff; /* Blue */
+}
+
+/* Button styles */
+.btn-danger {
+    background-color: #dc3545; /* Red */
+    border-color: #dc3545; /* Red */
+    color: #ffffff; /* White */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker Red */
+    border-color: #bd2130; /* Darker Red */
+}

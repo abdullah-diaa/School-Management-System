@@ -1,0 +1,190 @@
+
+/* Main Container */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header */
+.card-header {
+    background-color: #333; 
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+/* Form Inputs */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #007bff;;
+}
+
+/* Error Messages */
+.invalid-feedback {
+    color: #ff0000;
+    font-size: 14px;
+}
+    .card {
+        margin-bottom: 20px;
+        color:black;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* Style for the charts */
+    canvas {
+        max-width: 100%;
+        height: auto;
+    }
+    #notification-container {
+    
+    width:40%;
+    position: fixed;
+    top: 90%;
+    right: 30%;
+    z-index: 9999;
+    font-size:10px;
+}
+
+.notification {
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-25%);
+}
+
+.notification i {
+    margin-right: 10px;
+}
+
+
+.notification.success {
+    background-color: #29a745;
+    border-color: #218838;
+}
+
+.notification.error {
+    background-color: #dc3545;
+    border-color: #c82333;
+}
+@media (max-width: 768px) {
+#notification-container{
+       width:60%;
+        top: 90%;
+    right: 20%;
+    }
+}
+@media (min-width: 769px) {
+#notification-container{
+       font-size: 30px;
+    }
+   
+}
+        /* Main Container */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Icon link */
+        .icon-link {
+            display: grid;
+            grid-template-columns: auto; /* Adjust column widths */
+            align-items: center;
+            gap: 10px; /* Add gap between icon and label */
+            transition: transform 0.2s; /* Add transition effect for smooth hover */
+        }
+
+        .icon-link:hover {
+            transform: translateY(-5px); /* Move icon link up slightly on hover */
+        }
+
+        /* Icon */
+        .icon {
+            background-color: #fff; /* Icon background color */
+            border-radius: 50%; /* Rounded shape */
+            width: 80px; /* Increased icon size for mobile screens */
+            height: 80px; /* Increased icon size for mobile screens */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #333; /* Icon border color */
+        }
+
+        /* Icon label */
+        .icon-label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            /* Icon label color */
+            margin-top: 10px; /* Adjust margin for better spacing */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .icon-link {
+                margin-bottom: 20px; /* Adjust margin for smaller screens */
+            }
+
+            .col-md-4 {
+                flex-basis: 100%; /* Make columns full width on smaller screens */
+                max-width: 100%;
+            }
+        }
